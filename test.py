@@ -70,7 +70,7 @@ class LoginCase(unittest.TestCase):
         self.login("", 'qj@admin')  # 用户名为空，密码正确
         error_message = self.dr.find_element_by_id('login-form').text
         #self.assertEqual(error_message,
-                         '用户名不能为空。')  # 用assertEqual(a,b)方法来断言  a == b         self.dr.get_screenshot_as_file("D:\cnblogtest\\login_user_null.jpg")
+                        # '用户名不能为空。')  # 用assertEqual(a,b)方法来断言  a == b         self.dr.get_screenshot_as_file("D:\cnblogtest\\login_user_null.jpg")
         #self.dr.get_screenshot_as_file("C:\Users\Administrator\Desktop\\login_user_error.png")
 
     def tearDown(self):
